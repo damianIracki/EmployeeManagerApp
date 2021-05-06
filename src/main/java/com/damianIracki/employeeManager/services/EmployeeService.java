@@ -4,10 +4,12 @@ import com.damianIracki.employeeManager.exceptions.UserNotFoundException;
 import com.damianIracki.employeeManager.model.Employee;
 import com.damianIracki.employeeManager.repositories.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.UUID;
 
+@Service
 public class EmployeeService {
     private final EmployeeRepository employeeRepository;
 
